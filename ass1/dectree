@@ -1,0 +1,652 @@
+digraph "Decision Tree" {
+	rankdir=LR size="1000,500"
+	node [shape=rectangle]
+	"id = 0
+  Attribute = safety" -> "id = 1
+ target val = unacc" [label=low]
+	"id = 0
+  Attribute = safety" -> "id = 2
+  Attribute = persons" [label=med]
+	"id = 0
+  Attribute = safety" -> "id = 115
+  Attribute = persons" [label=high]
+	"id = 2
+  Attribute = persons" -> "id = 3
+ target val = unacc" [label=2]
+	"id = 2
+  Attribute = persons" -> "id = 4
+  Attribute = buying" [label=4]
+	"id = 2
+  Attribute = persons" -> "id = 56
+  Attribute = maint" [label=more]
+	"id = 115
+  Attribute = persons" -> "id = 116
+ target val = unacc" [label=2]
+	"id = 115
+  Attribute = persons" -> "id = 117
+  Attribute = buying" [label=4]
+	"id = 115
+  Attribute = persons" -> "id = 153
+  Attribute = buying" [label=more]
+	"id = 4
+  Attribute = buying" -> "id = 5
+  Attribute = maint" [label=vhigh]
+	"id = 4
+  Attribute = buying" -> "id = 16
+  Attribute = lug_boot" [label=high]
+	"id = 4
+  Attribute = buying" -> "id = 28
+  Attribute = maint" [label=med]
+	"id = 4
+  Attribute = buying" -> "id = 42
+  Attribute = maint" [label=low]
+	"id = 56
+  Attribute = maint" -> "id = 57
+  Attribute = buying" [label=vhigh]
+	"id = 56
+  Attribute = maint" -> "id = 68
+  Attribute = buying" [label=high]
+	"id = 56
+  Attribute = maint" -> "id = 79
+  Attribute = buying" [label=med]
+	"id = 56
+  Attribute = maint" -> "id = 97
+  Attribute = buying" [label=low]
+	"id = 117
+  Attribute = buying" -> "id = 118
+  Attribute = maint" [label=vhigh]
+	"id = 117
+  Attribute = buying" -> "id = 123
+  Attribute = maint" [label=high]
+	"id = 117
+  Attribute = buying" -> "id = 128
+  Attribute = maint" [label=med]
+	"id = 117
+  Attribute = buying" -> "id = 139
+  Attribute = maint" [label=low]
+	"id = 153
+  Attribute = buying" -> "id = 154
+  Attribute = maint" [label=vhigh]
+	"id = 153
+  Attribute = buying" -> "id = 167
+  Attribute = maint" [label=high]
+	"id = 153
+  Attribute = buying" -> "id = 184
+  Attribute = maint" [label=med]
+	"id = 153
+  Attribute = buying" -> "id = 199
+  Attribute = maint" [label=low]
+	"id = 5
+  Attribute = maint" -> "id = 6
+ target val = unacc" [label=vhigh]
+	"id = 5
+  Attribute = maint" -> "id = 7
+ target val = unacc" [label=high]
+	"id = 5
+  Attribute = maint" -> "id = 8
+  Attribute = lug_boot" [label=med]
+	"id = 5
+  Attribute = maint" -> "id = 12
+  Attribute = lug_boot" [label=low]
+	"id = 16
+  Attribute = lug_boot" -> "id = 17
+ target val = unacc" [label=small]
+	"id = 16
+  Attribute = lug_boot" -> "id = 18
+  Attribute = doors" [label=med]
+	"id = 16
+  Attribute = lug_boot" -> "id = 23
+  Attribute = maint" [label=big]
+	"id = 28
+  Attribute = maint" -> "id = 29
+  Attribute = lug_boot" [label=vhigh]
+	"id = 28
+  Attribute = maint" -> "id = 33
+  Attribute = lug_boot" [label=high]
+	"id = 28
+  Attribute = maint" -> "id = 37
+ target val = acc" [label=med]
+	"id = 28
+  Attribute = maint" -> "id = 38
+  Attribute = lug_boot" [label=low]
+	"id = 42
+  Attribute = maint" -> "id = 43
+  Attribute = lug_boot" [label=vhigh]
+	"id = 42
+  Attribute = maint" -> "id = 47
+ target val = acc" [label=high]
+	"id = 42
+  Attribute = maint" -> "id = 48
+  Attribute = lug_boot" [label=med]
+	"id = 42
+  Attribute = maint" -> "id = 52
+  Attribute = lug_boot" [label=low]
+	"id = 57
+  Attribute = buying" -> "id = 58
+ target val = unacc" [label=vhigh]
+	"id = 57
+  Attribute = buying" -> "id = 59
+ target val = unacc" [label=high]
+	"id = 57
+  Attribute = buying" -> "id = 60
+  Attribute = lug_boot" [label=med]
+	"id = 57
+  Attribute = buying" -> "id = 64
+  Attribute = lug_boot" [label=low]
+	"id = 68
+  Attribute = buying" -> "id = 69
+ target val = unacc" [label=vhigh]
+	"id = 68
+  Attribute = buying" -> "id = 70
+  Attribute = lug_boot" [label=high]
+	"id = 68
+  Attribute = buying" -> "id = 74
+  Attribute = lug_boot" [label=med]
+	"id = 68
+  Attribute = buying" -> "id = 78
+ target val = acc" [label=low]
+	"id = 79
+  Attribute = buying" -> "id = 80
+  Attribute = lug_boot" [label=vhigh]
+	"id = 79
+  Attribute = buying" -> "id = 84
+  Attribute = lug_boot" [label=high]
+	"id = 79
+  Attribute = buying" -> "id = 88
+  Attribute = doors" [label=med]
+	"id = 79
+  Attribute = buying" -> "id = 93
+  Attribute = lug_boot" [label=low]
+	"id = 97
+  Attribute = buying" -> "id = 98
+  Attribute = doors" [label=vhigh]
+	"id = 97
+  Attribute = buying" -> "id = 103
+  Attribute = lug_boot" [label=high]
+	"id = 97
+  Attribute = buying" -> "id = 107
+  Attribute = lug_boot" [label=med]
+	"id = 97
+  Attribute = buying" -> "id = 111
+  Attribute = lug_boot" [label=low]
+	"id = 118
+  Attribute = maint" -> "id = 119
+ target val = unacc" [label=vhigh]
+	"id = 118
+  Attribute = maint" -> "id = 120
+ target val = unacc" [label=high]
+	"id = 118
+  Attribute = maint" -> "id = 121
+ target val = acc" [label=med]
+	"id = 118
+  Attribute = maint" -> "id = 122
+ target val = acc" [label=low]
+	"id = 123
+  Attribute = maint" -> "id = 124
+ target val = unacc" [label=vhigh]
+	"id = 123
+  Attribute = maint" -> "id = 125
+ target val = acc" [label=high]
+	"id = 123
+  Attribute = maint" -> "id = 126
+ target val = acc" [label=med]
+	"id = 123
+  Attribute = maint" -> "id = 127
+ target val = acc" [label=low]
+	"id = 128
+  Attribute = maint" -> "id = 129
+ target val = acc" [label=vhigh]
+	"id = 128
+  Attribute = maint" -> "id = 130
+ target val = acc" [label=high]
+	"id = 128
+  Attribute = maint" -> "id = 131
+  Attribute = lug_boot" [label=med]
+	"id = 128
+  Attribute = maint" -> "id = 135
+  Attribute = lug_boot" [label=low]
+	"id = 139
+  Attribute = maint" -> "id = 140
+ target val = acc" [label=vhigh]
+	"id = 139
+  Attribute = maint" -> "id = 141
+  Attribute = lug_boot" [label=high]
+	"id = 139
+  Attribute = maint" -> "id = 145
+  Attribute = lug_boot" [label=med]
+	"id = 139
+  Attribute = maint" -> "id = 149
+  Attribute = lug_boot" [label=low]
+	"id = 154
+  Attribute = maint" -> "id = 155
+ target val = unacc" [label=vhigh]
+	"id = 154
+  Attribute = maint" -> "id = 156
+ target val = unacc" [label=high]
+	"id = 154
+  Attribute = maint" -> "id = 157
+  Attribute = doors" [label=med]
+	"id = 154
+  Attribute = maint" -> "id = 162
+  Attribute = doors" [label=low]
+	"id = 167
+  Attribute = maint" -> "id = 168
+ target val = unacc" [label=vhigh]
+	"id = 167
+  Attribute = maint" -> "id = 169
+  Attribute = doors" [label=high]
+	"id = 167
+  Attribute = maint" -> "id = 174
+  Attribute = doors" [label=med]
+	"id = 167
+  Attribute = maint" -> "id = 179
+  Attribute = doors" [label=low]
+	"id = 184
+  Attribute = maint" -> "id = 185
+ target val = acc" [label=vhigh]
+	"id = 184
+  Attribute = maint" -> "id = 186
+  Attribute = doors" [label=high]
+	"id = 184
+  Attribute = maint" -> "id = 191
+  Attribute = lug_boot" [label=med]
+	"id = 184
+  Attribute = maint" -> "id = 195
+  Attribute = lug_boot" [label=low]
+	"id = 199
+  Attribute = maint" -> "id = 200
+  Attribute = doors" [label=vhigh]
+	"id = 199
+  Attribute = maint" -> "id = 205
+  Attribute = lug_boot" [label=high]
+	"id = 199
+  Attribute = maint" -> "id = 209
+  Attribute = lug_boot" [label=med]
+	"id = 199
+  Attribute = maint" -> "id = 213
+  Attribute = lug_boot" [label=low]
+	"id = 8
+  Attribute = lug_boot" -> "id = 9
+ target val = unacc" [label=small]
+	"id = 8
+  Attribute = lug_boot" -> "id = 10
+ target val = unacc" [label=med]
+	"id = 8
+  Attribute = lug_boot" -> "id = 11
+ target val = acc" [label=big]
+	"id = 12
+  Attribute = lug_boot" -> "id = 13
+ target val = unacc" [label=small]
+	"id = 12
+  Attribute = lug_boot" -> "id = 14
+ target val = unacc" [label=med]
+	"id = 12
+  Attribute = lug_boot" -> "id = 15
+ target val = acc" [label=big]
+	"id = 18
+  Attribute = doors" -> "id = 19
+ target val = unacc" [label=2]
+	"id = 18
+  Attribute = doors" -> "id = 20
+ target val = unacc" [label=3]
+	"id = 18
+  Attribute = doors" -> "id = 21
+ target val = acc" [label=4]
+	"id = 18
+  Attribute = doors" -> "id = 22
+ target val = acc" [label="5more"]
+	"id = 23
+  Attribute = maint" -> "id = 24
+ target val = unacc" [label=vhigh]
+	"id = 23
+  Attribute = maint" -> "id = 25
+ target val = acc" [label=high]
+	"id = 23
+  Attribute = maint" -> "id = 26
+ target val = acc" [label=med]
+	"id = 23
+  Attribute = maint" -> "id = 27
+ target val = acc" [label=low]
+	"id = 29
+  Attribute = lug_boot" -> "id = 30
+ target val = unacc" [label=small]
+	"id = 29
+  Attribute = lug_boot" -> "id = 31
+ target val = unacc" [label=med]
+	"id = 29
+  Attribute = lug_boot" -> "id = 32
+ target val = acc" [label=big]
+	"id = 33
+  Attribute = lug_boot" -> "id = 34
+ target val = unacc" [label=small]
+	"id = 33
+  Attribute = lug_boot" -> "id = 35
+ target val = unacc" [label=med]
+	"id = 33
+  Attribute = lug_boot" -> "id = 36
+ target val = acc" [label=big]
+	"id = 38
+  Attribute = lug_boot" -> "id = 39
+ target val = acc" [label=small]
+	"id = 38
+  Attribute = lug_boot" -> "id = 40
+ target val = good" [label=med]
+	"id = 38
+  Attribute = lug_boot" -> "id = 41
+ target val = good" [label=big]
+	"id = 43
+  Attribute = lug_boot" -> "id = 44
+ target val = unacc" [label=small]
+	"id = 43
+  Attribute = lug_boot" -> "id = 45
+ target val = unacc" [label=med]
+	"id = 43
+  Attribute = lug_boot" -> "id = 46
+ target val = acc" [label=big]
+	"id = 48
+  Attribute = lug_boot" -> "id = 49
+ target val = acc" [label=small]
+	"id = 48
+  Attribute = lug_boot" -> "id = 50
+ target val = acc" [label=med]
+	"id = 48
+  Attribute = lug_boot" -> "id = 51
+ target val = good" [label=big]
+	"id = 52
+  Attribute = lug_boot" -> "id = 53
+ target val = acc" [label=small]
+	"id = 52
+  Attribute = lug_boot" -> "id = 54
+ target val = acc" [label=med]
+	"id = 52
+  Attribute = lug_boot" -> "id = 55
+ target val = good" [label=big]
+	"id = 60
+  Attribute = lug_boot" -> "id = 61
+ target val = unacc" [label=small]
+	"id = 60
+  Attribute = lug_boot" -> "id = 62
+ target val = acc" [label=med]
+	"id = 60
+  Attribute = lug_boot" -> "id = 63
+ target val = acc" [label=big]
+	"id = 64
+  Attribute = lug_boot" -> "id = 65
+ target val = unacc" [label=small]
+	"id = 64
+  Attribute = lug_boot" -> "id = 66
+ target val = acc" [label=med]
+	"id = 64
+  Attribute = lug_boot" -> "id = 67
+ target val = acc" [label=big]
+	"id = 70
+  Attribute = lug_boot" -> "id = 71
+ target val = unacc" [label=small]
+	"id = 70
+  Attribute = lug_boot" -> "id = 72
+ target val = acc" [label=med]
+	"id = 70
+  Attribute = lug_boot" -> "id = 73
+ target val = acc" [label=big]
+	"id = 74
+  Attribute = lug_boot" -> "id = 75
+ target val = unacc" [label=small]
+	"id = 74
+  Attribute = lug_boot" -> "id = 76
+ target val = acc" [label=med]
+	"id = 74
+  Attribute = lug_boot" -> "id = 77
+ target val = acc" [label=big]
+	"id = 80
+  Attribute = lug_boot" -> "id = 81
+ target val = unacc" [label=small]
+	"id = 80
+  Attribute = lug_boot" -> "id = 82
+ target val = acc" [label=med]
+	"id = 80
+  Attribute = lug_boot" -> "id = 83
+ target val = acc" [label=big]
+	"id = 84
+  Attribute = lug_boot" -> "id = 85
+ target val = unacc" [label=small]
+	"id = 84
+  Attribute = lug_boot" -> "id = 86
+ target val = acc" [label=med]
+	"id = 84
+  Attribute = lug_boot" -> "id = 87
+ target val = acc" [label=big]
+	"id = 88
+  Attribute = doors" -> "id = 89
+ target val = acc" [label=2]
+	"id = 88
+  Attribute = doors" -> "id = 90
+ target val = acc" [label=3]
+	"id = 88
+  Attribute = doors" -> "id = 91
+ target val = acc" [label=4]
+	"id = 88
+  Attribute = doors" -> "id = 92
+ target val = acc" [label="5more"]
+	"id = 93
+  Attribute = lug_boot" -> "id = 94
+ target val = acc" [label=small]
+	"id = 93
+  Attribute = lug_boot" -> "id = 95
+ target val = acc" [label=med]
+	"id = 93
+  Attribute = lug_boot" -> "id = 96
+ target val = good" [label=big]
+	"id = 98
+  Attribute = doors" -> "id = 99
+ target val = unacc" [label=2]
+	"id = 98
+  Attribute = doors" -> "id = 100
+ target val = acc" [label=3]
+	"id = 98
+  Attribute = doors" -> "id = 101
+ target val = acc" [label=4]
+	"id = 98
+  Attribute = doors" -> "id = 102
+ target val = acc" [label="5more"]
+	"id = 103
+  Attribute = lug_boot" -> "id = 104
+ target val = unacc" [label=small]
+	"id = 103
+  Attribute = lug_boot" -> "id = 105
+ target val = acc" [label=med]
+	"id = 103
+  Attribute = lug_boot" -> "id = 106
+ target val = acc" [label=big]
+	"id = 107
+  Attribute = lug_boot" -> "id = 108
+ target val = acc" [label=small]
+	"id = 107
+  Attribute = lug_boot" -> "id = 109
+ target val = good" [label=med]
+	"id = 107
+  Attribute = lug_boot" -> "id = 110
+ target val = good" [label=big]
+	"id = 111
+  Attribute = lug_boot" -> "id = 112
+ target val = acc" [label=small]
+	"id = 111
+  Attribute = lug_boot" -> "id = 113
+ target val = good" [label=med]
+	"id = 111
+  Attribute = lug_boot" -> "id = 114
+ target val = good" [label=big]
+	"id = 131
+  Attribute = lug_boot" -> "id = 132
+ target val = acc" [label=small]
+	"id = 131
+  Attribute = lug_boot" -> "id = 133
+ target val = acc" [label=med]
+	"id = 131
+  Attribute = lug_boot" -> "id = 134
+ target val = vgood" [label=big]
+	"id = 135
+  Attribute = lug_boot" -> "id = 136
+ target val = good" [label=small]
+	"id = 135
+  Attribute = lug_boot" -> "id = 137
+ target val = vgood" [label=med]
+	"id = 135
+  Attribute = lug_boot" -> "id = 138
+ target val = vgood" [label=big]
+	"id = 141
+  Attribute = lug_boot" -> "id = 142
+ target val = acc" [label=small]
+	"id = 141
+  Attribute = lug_boot" -> "id = 143
+ target val = acc" [label=med]
+	"id = 141
+  Attribute = lug_boot" -> "id = 144
+ target val = vgood" [label=big]
+	"id = 145
+  Attribute = lug_boot" -> "id = 146
+ target val = good" [label=small]
+	"id = 145
+  Attribute = lug_boot" -> "id = 147
+ target val = good" [label=med]
+	"id = 145
+  Attribute = lug_boot" -> "id = 148
+ target val = vgood" [label=big]
+	"id = 149
+  Attribute = lug_boot" -> "id = 150
+ target val = good" [label=small]
+	"id = 149
+  Attribute = lug_boot" -> "id = 151
+ target val = vgood" [label=med]
+	"id = 149
+  Attribute = lug_boot" -> "id = 152
+ target val = vgood" [label=big]
+	"id = 157
+  Attribute = doors" -> "id = 158
+ target val = acc" [label=2]
+	"id = 157
+  Attribute = doors" -> "id = 159
+ target val = acc" [label=3]
+	"id = 157
+  Attribute = doors" -> "id = 160
+ target val = acc" [label=4]
+	"id = 157
+  Attribute = doors" -> "id = 161
+ target val = acc" [label="5more"]
+	"id = 162
+  Attribute = doors" -> "id = 163
+ target val = unacc" [label=2]
+	"id = 162
+  Attribute = doors" -> "id = 164
+ target val = acc" [label=3]
+	"id = 162
+  Attribute = doors" -> "id = 165
+ target val = acc" [label=4]
+	"id = 162
+  Attribute = doors" -> "id = 166
+ target val = acc" [label="5more"]
+	"id = 169
+  Attribute = doors" -> "id = 170
+ target val = unacc" [label=2]
+	"id = 169
+  Attribute = doors" -> "id = 171
+ target val = acc" [label=3]
+	"id = 169
+  Attribute = doors" -> "id = 172
+ target val = acc" [label=4]
+	"id = 169
+  Attribute = doors" -> "id = 173
+ target val = acc" [label="5more"]
+	"id = 174
+  Attribute = doors" -> "id = 175
+ target val = acc" [label=2]
+	"id = 174
+  Attribute = doors" -> "id = 176
+ target val = acc" [label=3]
+	"id = 174
+  Attribute = doors" -> "id = 177
+ target val = acc" [label=4]
+	"id = 174
+  Attribute = doors" -> "id = 178
+ target val = acc" [label="5more"]
+	"id = 179
+  Attribute = doors" -> "id = 180
+ target val = acc" [label=2]
+	"id = 179
+  Attribute = doors" -> "id = 181
+ target val = acc" [label=3]
+	"id = 179
+  Attribute = doors" -> "id = 182
+ target val = acc" [label=4]
+	"id = 179
+  Attribute = doors" -> "id = 183
+ target val = acc" [label="5more"]
+	"id = 186
+  Attribute = doors" -> "id = 187
+ target val = unacc" [label=2]
+	"id = 186
+  Attribute = doors" -> "id = 188
+ target val = acc" [label=3]
+	"id = 186
+  Attribute = doors" -> "id = 189
+ target val = acc" [label=4]
+	"id = 186
+  Attribute = doors" -> "id = 190
+ target val = acc" [label="5more"]
+	"id = 191
+  Attribute = lug_boot" -> "id = 192
+ target val = acc" [label=small]
+	"id = 191
+  Attribute = lug_boot" -> "id = 193
+ target val = vgood" [label=med]
+	"id = 191
+  Attribute = lug_boot" -> "id = 194
+ target val = vgood" [label=big]
+	"id = 195
+  Attribute = lug_boot" -> "id = 196
+ target val = good" [label=small]
+	"id = 195
+  Attribute = lug_boot" -> "id = 197
+ target val = vgood" [label=med]
+	"id = 195
+  Attribute = lug_boot" -> "id = 198
+ target val = vgood" [label=big]
+	"id = 200
+  Attribute = doors" -> "id = 201
+ target val = acc" [label=2]
+	"id = 200
+  Attribute = doors" -> "id = 202
+ target val = acc" [label=3]
+	"id = 200
+  Attribute = doors" -> "id = 203
+ target val = acc" [label=4]
+	"id = 200
+  Attribute = doors" -> "id = 204
+ target val = acc" [label="5more"]
+	"id = 205
+  Attribute = lug_boot" -> "id = 206
+ target val = acc" [label=small]
+	"id = 205
+  Attribute = lug_boot" -> "id = 207
+ target val = acc" [label=med]
+	"id = 205
+  Attribute = lug_boot" -> "id = 208
+ target val = vgood" [label=big]
+	"id = 209
+  Attribute = lug_boot" -> "id = 210
+ target val = good" [label=small]
+	"id = 209
+  Attribute = lug_boot" -> "id = 211
+ target val = vgood" [label=med]
+	"id = 209
+  Attribute = lug_boot" -> "id = 212
+ target val = vgood" [label=big]
+	"id = 213
+  Attribute = lug_boot" -> "id = 214
+ target val = good" [label=small]
+	"id = 213
+  Attribute = lug_boot" -> "id = 215
+ target val = vgood" [label=med]
+	"id = 213
+  Attribute = lug_boot" -> "id = 216
+ target val = vgood" [label=big]
+}
